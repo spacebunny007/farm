@@ -1,0 +1,118 @@
+/* -------- IMPORTED FONTS ----------- */
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Open+Sans&display=swap');
+/*----------CSS RESET ----------------*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* -------- ROOT VARIABLES ----------- */
+:root{
+    --primary-color: green;
+    --secondary-color: white;
+    --text-color: black;
+    --font-stack: 'Open Sans', sans-serif;
+    --header-font: 'Luckiest Guy', cursive;
+    --header-height: 80px;
+    --border-color: transparent;
+    --card-header-bg: rgba(0, 0, 0, 0.6);
+    --footer-bg:green; 
+}
+/* ---------GLOBAL STYLES (mobile first/small) -----------*/
+
+body{
+    font-family: var(--font-stack);
+    color:var(--text-color);
+    background-color:var(--secondary-color);
+}
+
+header{
+    background-color: var(--primary-color);
+    color:white;
+    height: var(--header-height);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: var(--header-font);
+    font-size: 1.8rem;
+    padding: 10px;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    background-color: var(--primary-color);
+    padding: 10px 0;
+}
+
+nav ul li{
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 15px;
+}
+
+h2, h3 {
+    margin: 10px 0;
+    font-family: var(--header-font);
+    color: var(--text-color);
+}
+
+.fruit-gallery, .vegetables-gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.image-card {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+
+.image-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.image-card .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-family: var(--header-font);
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+footer{
+    text-align: center;
+    background-color: var(--footer-bg);
+    color: white;
+    padding: 15px;
+    font-family: var(--font-stack);
+    margin-top: 20px;
+}
+
+/*--------- MEDIA QUERY (medium) ------------*/
+/*--------- MEDIA QUERY (large) -------------*/
+/*--------- MEDIA QUERY (xl) ----------------*/
