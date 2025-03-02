@@ -220,6 +220,25 @@ footer {
     margin-top: 20px;
 }
 
+.back-to-top {
+    position: fixed;  
+    bottom: 20px;    
+    right: 20px;      
+    background-color: var(--nav-button);
+    color: white;
+    padding: 10px 15px;
+    font-family: var(--font-stack);
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+
+.back-to-top:hover {
+    background-color: var(--nav-button);
+}
+
 
 /*--------- MEDIA QUERY (medium) ------------*/
 @media (min-width: 600px) {
