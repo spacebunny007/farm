@@ -1,5 +1,5 @@
 /* -------- IMPORTED FONTS ----------- */
-@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Habibi&family=Irish+Grover&display=swap');
 /*----------CSS RESET ----------------*/
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -54,16 +54,14 @@ table {
 
 /* -------- ROOT VARIABLES ----------- */
 :root{
-    --primary-color: green;
-    --secondary-color: white;
-    --nav-button: #E75D02;
-    --text-color: black;
-    --font-stack: 'Open Sans', sans-serif;
-    --header-font: 'Luckiest Guy', cursive;
-    --header-height: 80px;
+    --green: #06A816;;
+    --white: #ffffff;;
+    --orange: #E75D02;
+    --black: #000000;
+    --font-stack: 'Habibi', serif;
+    --header-font: 'Irish Grover', bold;
     --border-color: transparent;
     --card-header-bg: rgba(0, 0, 0, 0.6);
-    --footer-bg: white; 
 }
 /* ---------GLOBAL STYLES (mobile first/small) -----------*/
 
@@ -73,14 +71,15 @@ html {
 
 body{
     font-family: var(--font-stack);
-    color:var(--text-color);
-    background-color:var(--secondary-color);
+    color:var(--black);
+    background-color:var(--white);
     text-align: center;
+    min-width: 428px;
 }
 
 header{
-    background-color: var(--primary-color);
-    color:white;
+    background-color: var(--green);
+    color:var(--white);
     padding:20px;
     display: flex;
     align-items: center;
@@ -118,13 +117,13 @@ p {
     font-size: 1.25em;
     text-align: center;
     max-width: 800px;
-    margin: 15px;
+    margin: 15px auto;
   }
 
 nav button {
-    background-color: var(--nav-button);
-    color: white;
-    border: 2px solid white;
+    background-color: var(--orange);
+    color: var(--white);
+    border: 2px solid var(--orange);
     padding: 12px 24px;
     font-size: 1.25em;
     border-radius: 4px;
@@ -134,11 +133,9 @@ nav button {
   }
   
 nav button:hover {
-    background-color: var(--nav-button);
-    color: white;
+    background-color: var(--orange);
+    color: var(--white);
   } 
-
-
 
 nav ul{
     display: flex;
@@ -153,7 +150,7 @@ nav ul li{
 }
 
 nav ul li a {
-    color: white;
+    color: var(--orange);
     text-decoration: none;
     font-weight: bold;
 }
@@ -192,29 +189,31 @@ section {
     text-align: center;
     padding: 10px 0;
     font-family: var(--header-font);
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: bold;
     text-transform: capitalize;
 }
 
 #Location{
-    background-color: var(--primary-color);
-    color: white;
+    background-color: var(--green);
+    color: var(--white);
+    margin: 15px auto;
     padding: 20px;
     display: flex;
-    flex-direction: column;
+    flex-direction: auto;
     text-align: center;
+    align-items: center;
     gap: 15px;
-    width: 100%
+    width: 100%;
 }
 
 footer {
     width: 100%;
     text-align: center;
     background-color: white; 
-    color: var(--text-color); 
+    color: var(--green); 
     padding: 15px 0;
-    font-family: var(--font-stack);
+    font-family: var(--black);
     font-size: 0.9rem;
     box-sizing: border-box;
     margin-top: 20px;
@@ -224,10 +223,10 @@ footer {
     position: fixed;  
     bottom: 20px;    
     right: 20px;      
-    background-color: var(--nav-button);
+    background-color: var(--orange);
     color: white;
     padding: 10px 15px;
-    font-family: var(--font-stack);
+    font-family: var(--black);
     font-weight: bold;
     text-decoration: none;
     border-radius: 5px;
